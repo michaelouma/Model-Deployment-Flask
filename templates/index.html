@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Heart Condition Prediction</title>
+    <style>
+        body {
+            background-color: #a459f0;
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #a459f0;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h2, h3 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Patient Details</h2>
+    <form method="POST" action="/predict">
+        Age: <input type="text" name="age"><br>
+        Gender: <input type="text" name="gender"><br>
+        Chest Pain: <input type="text" name="chestpain"><br>
+        Resting BP: <input type="text" name="restingBP"><br>
+        Serum Cholesterol: <input type="text" name="serumcholestrol"><br>
+        Fasting Blood Sugar: <input type="text" name="fastingbloodsugar"><br>
+        Resting ECG: <input type="text" name="restingrelectro"><br>
+        Max Heart Rate: <input type="text" name="maxheartrate"><br>
+        Exercise Angina: <input type="text" name="exerciseangia"><br>
+        Oldpeak: <input type="text" name="oldpeak"><br>
+        Slope: <input type="text" name="slope"><br>
+        Major Vessels: <input type="text" name="noofmajorvessels"><br>
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h3>Prediction Result: {{ prediction }}</h3>
+    {% endif %}
+</body>
+</html>
