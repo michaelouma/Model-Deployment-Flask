@@ -10,6 +10,6 @@ Cardiovascular Prediction/.<br>
 ├── static/.<br>
 │   └── style.css         # Optional styling.<br>
 ├── model.pkl             # Pre-trained SVM model.<br>
-├── requirement.txt       # Dependencies.<br>
+├── requirement.txt       # Dependencies: Here all the libraries used for the project are shown here.<br>
 
 
