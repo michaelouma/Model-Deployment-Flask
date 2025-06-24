@@ -3,35 +3,40 @@
 <head>
     <title>Heart Condition Prediction</title>
     <style>
-        body {
-            background-color: #a459f0;
-            font-family: Arial, sans-serif;
-            color: white;
-            padding: 20px;
-        }
+    body {
+        background-image: url('static/cardiac.png'); /* <-- Replace with your image path or URL */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: Arial, sans-serif;
+        color: rgb(219, 190, 190);
+        padding: 20px;
+        height: 100vh; /* makes sure body covers the full height */
+        margin: 0;
+    }
 
-        input[type="text"] {
-            margin-bottom: 10px;
-            padding: 5px;
-            width: 300px;
-            border: none;
-            border-radius: 5px;
-        }
+    input[type="text"] {
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 300px;
+        border: none;
+        border-radius: 5px;
+    }
 
-        button {
-            padding: 10px 20px;
-            background-color: white;
-            color: #a459f0;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-            cursor: pointer;
-        }
+    button {
+        padding: 10px 20px;
+        background-color: rgb(115, 95, 95);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
 
-        h2, h3 {
-            color: white;
-        }
-    </style>
+    h2, h3 {
+        color: white;
+    }
+</style>
 </head>
 <body>
     <h2>Enter Patient Details</h2>
