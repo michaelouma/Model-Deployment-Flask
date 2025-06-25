@@ -4,6 +4,7 @@ This project demonstrates how to deploy a Support Vector Machine (SVM) machine l
 ## Project Structure
 Cardiovascular Prediction/.<br>
 ├── model.py              # SVM model training and saving.<br>
+|-static
 ├── app.py                # Flask web app.<br>
 ├── templates/.<br>
 │   └── index.html        # Frontend HTML form.<br>
